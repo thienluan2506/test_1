@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BG-clip</title>
+        <meta charset="utf-8">
+        <style>
+            .header{
+                width: 300px;
+                height: 300px;
+                background-color: green;
+                padding: 10px;
+                box-sizing: border-box ;
+                border: 20px dashed black;
+                background-clip:content-box ;
+
+            }
+            
+            .header2{
+                width: 50vw;
+                height: 50vh;
+                /* background-image:  */
+                /* url(https://upload.wikimedia.org/wikipedia/commons/9/9b/USSR_Star.png?20110320115816), */
+                /* url(https://hips.hearstapps.com/hmg-prod/images/netflix-wednesday-jenna-ortega-see-through-dress-instagram-1671565560.png?crop=0.9709864603481625xw:1xh;center,top&resize=1200:*); */
+                 background-repeat: no-repeat; 
+                 background-size: 100% ; 
+                /* background-size: contain  ; */
+                /* background-size: cover ; */
+                background-image: linear-gradient(0,rgba(255,255,0,0.5),rgba(0,0,255,0.5)),
+                url(https://hips.hearstapps.com/hmg-prod/images/netflix-wednesday-jenna-ortega-see-through-dress-instagram-1671565560.png?crop=0.9709864603481625xw:1xh;center,top&resize=1200:*);
+
+                border: 30px dashed #ccc;
+                box-sizing: border-box;
+                padding: 20px;
+                background-origin: content-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+        <div class="header2"></div> 
+    </body>
+</html>

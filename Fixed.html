@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- 
+    Inline: Các phần tử hiển thị inline hiển thị trên cùng một dòng và lấy không gian tối thiểu cần thiết. Nói cách khác, các phần tử 
+    inline không tạo ra một khối mới, mà chỉ đóng vai trò như một phần của văn bản chứa nó. Ví dụ: <span>, <a>, <img>, <button>.
+
+    Inline-block: Các phần tử hiển thị inline-block cũng hiển thị trên cùng một dòng nhưng cho phép kích thước và các thuộc tính định 
+    dạng khác. Nói cách khác, các phần tử inline-block tạo ra một khối nhưng nó sẽ nằm trên cùng một dòng như các phần tử inline khác. 
+    Ví dụ: <input>, <select>, <textarea>.
+
+    Block: Các phần tử hiển thị block hiển thị trên một dòng riêng biệt và chiếm toàn bộ chiều rộng của bố cục. Nói cách khác, các 
+    phần tử block tạo ra một khối mới trên trang web. Ví dụ: <div>, <p>, <ul>, <h1>, <form>.
+
+    Contents: Kiểu hiển thị này được sử dụng để thay đổi kiểu hiển thị của các phần tử con của một phần tử đã chọn. Nó sẽ không làm 
+    thay đổi kiểu hiển thị của phần tử cha. Kiểu hiển thị này không phải là một giá trị CSS riêng, nó được sử dụng trong kiểu hiển 
+    thị Flexbox hoặc Grid.
+
+    Grid: Kiểu hiển thị lưới (Grid) là một cách để xây dựng bố cục cho trang web bằng cách chia trang thành các hàng và cột. Kiểu 
+    hiển thị này cho phép bạn tạo ra các bố cục phức tạp hơn, với các phần tử HTML được sắp xếp trong các ô lưới. Ví dụ: display: grid.
+
+    Flex: Kiểu hiển thị linh hoạt (Flex) cho phép bạn sắp xếp các phần tử HTML theo chiều ngang hoặc dọc trên một trục, đồng thời 
+    giữ nguyên chiều rộng và chiều cao của các phần tử. Kiểu hiển thị này cho phép
+ -->
+<html>
+    <head>
+        <title>Fixed</title>
+        <meta charset="urf-8">
+        <style>
+            .box{
+                width: 100%;
+                height: 100px;
+                color: blue;
+                background-color: black;
+                position: fixed; 
+                display: flex;
+                top: 0;
+                left: 0;
+            }
+            .box2{
+                font-size: 42px;
+                font-weight: 700;
+
+                color: aqua;
+                background-color: red;
+                position: absolute; 
+                margin: auto; 
+            }
+            h1{ 
+                margin-top: 100px;
+                color: blue;
+                padding: 0 16px;
+            }
+            ul{
+                height: 2000px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"><div class="box2">cai nay ra giua ne</div> day la thuoc tinh fixed</div>
+        <h1>Position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>

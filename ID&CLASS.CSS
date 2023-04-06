@@ -1,0 +1,9 @@
+#first{
+    color:var(--mycolor);
+}
+.second1{
+    color: var(--mycolor);
+}
+:root{
+    --mycolor: blue;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo_Elements</title>
+        <meta charset="urf-8">
+        <style>
+            .box{
+                width: 100%;
+                height: 100px;
+                background: green;
+            }
+            /* .box2{
+                width: 50px;
+                height: 50px;
+                background: black;
+                background-position: right;
+            } */
+            .box::before{
+                content: "xin chao";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: aqua;
+            }
+            .box::after{
+                content: "ket thuc";
+                color: aliceblue;
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: black;
+            }
+            h1::first-letter{
+                font-size: 50px;
+                color: red;
+            }
+            h2::first-line{
+                font-size: 100px;
+                color: blue;
+            }
+            .selection::selection{
+                background-color: violet;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="box" ><div class="box2"></div></div> -->
+        <div class="box" ></div>
+        <div>
+            <h1>BAI HOC HOM NAY LA <br/> day la lenh xuong dong </h1>
+            <h2>FIRST_LINE</h2>
+        </div>
+        <div class="selection">
+            day la root gia selection, có tác dụng bôi đen sẽ thay đổi màu tùy theo code
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sticky</title>
+        <meta charset="urf-8">
+        <style>
+            li:nth-of-type(3){
+                color: blueviolet;
+            }
+            .red{
+                color: red;
+            }
+            .box{
+                margin-top: 40px;
+                padding: 0 16px;
+                color: #fff;
+                background-color: #333;
+                top: 0;
+                position:-webkit-sticky;
+                position: sticky;
+            }
+            ul{
+                height: 2000px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="box">Position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li class="red">Sticky</li>
+        </ul>
+    </body>
+</html>
